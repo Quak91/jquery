@@ -1,9 +1,15 @@
 $(document).ready(function (){
 
 	$("#form").submit(function() {
-		/*
-			tutaj będzie walidacja formularza, zależnie od jej wyniku formularz zostanie wysłany(lub nie)
-		*/
-	})
+
+		var isValid = true;
+
+		$("#mail").validateEmail();
+		
+		if($("#mail").hasClass("wrong")) { isValid = false; }
+
+		if(isValid === false) { return false; }
+
+	});
 
 });
