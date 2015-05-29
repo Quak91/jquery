@@ -18,30 +18,30 @@
 <body>
 <center>
 <h1>Rejestracja</h1>
-	<form id="form" action="javascript:alert('Zostałeś zarejestrowany!');">
+	<form action="javascript:alert('Zostałeś zarejestrowany!');">
 		<table>
 			<tr>
 				<td>Imię:</td>
-				<td><input type="text" id="firstname"></td>
+				<td><input type="text" id="firstname" class="wrong"></td>
 			</tr>
 			<tr>
 				<td>Nazwisko:</td>
-				<td><input type="text" id="lastname"></td>
+				<td><input type="text" id="lastname" class="wrong"></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><input type="text" id="mail"></td>
+				<td><input type="text" id="mail" class="wrong"></td>
 			</tr>
 			<tr>
 				<td>Hasło:</td>
-				<td><input type="password" id="password"></td>
+				<td><input type="password" id="password" class="wrong"></td>
 			</tr>
 			<tr>
 				<td>&nbsp</td>
 				<td id="pwd_strength" align="right"></td>
 			</tr>
 		</table>
-		<input type="submit" value="Wyślij">
+		<input type="submit" value="Wyślij" id="submit">
 	</form>
 </center>
 </body>
